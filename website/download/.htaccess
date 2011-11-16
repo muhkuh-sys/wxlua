@@ -1,0 +1,11 @@
+# File:   .htaccess
+# Author: Francesco Montorsi
+# Note:   these settings make the download directory indexing nicer
+
+AddDescription "GZipped archive" *.tar.gz
+
+# ignore ourselves from listing
+IndexIgnore .htaccess
+
+# make column width big enough
+IndexOptions FancyIndexing NameWidth=50 DescriptionWidth=*

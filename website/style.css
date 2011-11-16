@@ -1,0 +1,360 @@
+/**********************************
+ * TITLE: Gila Screen Stylesheet  *
+ * URI  : gila/gila-screen.css    *
+ * MODIF: 2003-Apr-30 19:09 +0800 *
+ **********************************/
+
+
+/* ##### Common Styles ##### */
+
+body {
+  color: black;
+  background-color: rgb(243,242,235);
+  font-family: verdana, helvetica, arial, sans-serif;
+  font-size: 73%;  /* Enables font size scaling in MSIE */
+  margin: 0;
+  padding: 0;
+}
+
+html > body {
+  font-size: 10pt;
+}
+
+acronym, .titleTip {
+  border-bottom: 1px dotted rgb(168,140,83);
+  cursor: help;
+  margin: 0;
+  padding: 0;
+}
+
+.doNotDisplay {
+  display: none !important;
+}
+
+
+.smallCaps {
+  font-size: 117%;
+  font-variant: small-caps;
+}
+
+pre {
+  background-color: rgb(230,230,230);
+  margin: 0.5em 1em;
+  padding: 1em;
+  width: 85%;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+
+/* ##### Header ##### */
+
+#header {
+  color: inherit;
+
+  /*background-color: rgb(100,230,150);*/
+  background-image: url(images/header-background.png);
+  background-repeat: repeat-y;
+  vertical-align: middle;
+
+  /* these two lines makes the rendering of the header nice also
+     when viewing the webpage with a browser window wider than the
+     header-background.png image; in fact the right portion of the
+     background will be drawn in black which is the colour in the
+     right end of the gradient image ;)
+   */
+  background-position: left;
+  background-color: black;
+}
+
+.headerTitle {
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  padding: 0.6em 4mm 0em 4mm;
+  bottom: 0;
+  height: 45px;
+  text-align: right;
+  font-size: 25px;
+  vertical-align: middle;
+  color: white;
+}
+
+.headerTitle a {
+  color: rgb(100,255,100);
+  background-color: transparent;
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.headerTitle span {
+  color: rgb(100,200,100);
+  background-color: transparent;
+  font-weight: normal;
+  font-size: 60%;
+}
+
+.subHeader {
+  color: white;
+  background-color: black;
+  font-size: 109%;
+  text-align: center;
+  margin: 0;
+  padding: 0.5ex 0;
+}
+
+.subHeader a {
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0;
+  padding: 0 1ex;
+}
+
+.subHeader a:hover {
+  color: black;
+  background-color: white;
+}
+
+
+/* ##### Left Side Bar ##### */
+
+.leftSideBar {
+  width: 12.5em;
+  float: left;
+  clear: left;
+}
+
+.leftSideBar .sideBarTitle {
+  color: rgb(64,64,64);
+  background-color: rgb(230,223,207);
+  font-weight: bold;
+  margin: 0;
+  padding: 0.8ex 1ex;
+}
+
+.leftSideBar ul {
+  list-style-type: none;
+  list-style-position: outside;
+  margin: 0 0 1em 0;
+  padding: 0;
+}
+
+.leftSideBar li {
+  margin: 1ex;
+  padding: 0 0 1.25ex 0.75ex;
+}
+
+.leftSideBar a {
+  color: rgb(166,140,83);
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.leftSideBar a:hover {
+  color: rgb(64,64,64);
+  background-color: rgb(240,255,130);
+  text-decoration: none;
+}
+
+.leftSideBar .sideBarText {
+  color: rgb(166,140,83);
+  background-color: transparent;
+  line-height: 1.25em;
+  margin: 1ex 0.25ex 1.5em 0.75ex;
+  padding: 0;
+  display: block;
+}
+
+.leftSideBar .sideBarText a {
+  text-decoration: underline;
+}
+
+.leftSideBar .sideBarText a:hover {
+  text-decoration: none;
+}
+
+.leftSideBar .thisPage {
+  color: rgb(64,64,64);
+  background-color: transparent;
+  font-weight: bold;
+}
+
+
+/* ##### Right Side Bar ##### */
+
+.rightSideBar {
+  background-color: white;
+  width: 13em;
+  margin: 2ex 0.75ex 0 2em;
+  padding: 0;
+  float: right;
+  clear: right;
+  border: 1px solid rgb(216,210,195);
+}
+
+[class~="rightSideBar"] {
+  margin-right: 1.5ex;
+}
+
+.rightSideBar .sideBarTitle {
+  color: black;
+  background-color: rgb(230,223,207);
+  font-weight: bold;
+  margin: 1.25ex 1ex;
+  padding: 0.9ex 1ex;
+}
+
+.rightSideBar a {
+  color: rgb(166,140,83);
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.rightSideBar a:hover {
+  text-decoration: none;
+}
+
+.rightSideBar .sideBarText {
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0 2ex 1em 2ex;
+  text-align: center;
+}
+
+.rightSideBar .more {
+  text-decoration: none;
+  text-align: right;
+  margin: 0;
+  padding: 0 2ex 1em 2ex;
+  display: block;
+}
+
+.rightSideBar .more:hover {
+  text-decoration: underline;
+}
+
+
+/* ##### Main Copy ##### */
+
+#main-copy {
+  color: black;
+  background-color: white;
+  text-align: justify;
+  line-height: 1.8em;
+  margin: 0 0 0 12.5em;
+  padding: 0.5ex 2em 1em 1em;
+  border-left: 1px solid rgb(216,210,195);
+}
+
+#main-copy h1 {
+  color: rgb(166,140,83);
+  background-color: transparent;
+  font-family: arial, verdana, helvetica, sans-serif;
+  font-size: 155%;
+  font-weight: bold;
+
+  text-align: left;
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
+  border-top: 3px solid rgb(216,210,195);
+}
+
+#main-copy h1.first {
+  border-top: none;
+  padding-top: 0;
+}
+
+#main-copy h2 {
+  color: rgb(146,120,63);
+  background-color: transparent;
+  font-family: arial, verdana, helvetica, sans-serif;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: left;
+  margin: 1em 0 0 0;
+  padding: 1em 0 0 0;
+  border-bottom: 2px solid rgb(196,170,113);
+}
+
+#main-copy .indented {
+  margin-left: 3%;
+}
+
+#main-copy a {
+  color: rgb(168,140,83);
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+#main-copy a:hover {
+  text-decoration: none;
+}
+
+p {
+  margin: 1em 0 1.5em 0;
+  padding: 0;
+}
+
+dt {
+  font-weight: bold;
+  margin: 0;
+  padding: 0 0 0.5ex 0;
+}
+
+dd {
+  margin: 0 0 1.5em 1.5em;
+  padding: 0;
+}
+
+li {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+img {
+  border: 0;
+  margin: 10px;
+  float: left;
+}
+
+
+/* ##### Footer ##### */
+
+#footer {
+  color: black;
+  background-color: rgb(230,223,207);
+  font-size: 92%;
+  text-align: center;
+  line-height: 1.25em;
+  margin: 0;
+  padding: 1em 4mm 1em 4mm;
+  clear: both;
+  vertical-align: middle;
+}
+
+#footer div {
+  margin: 0;
+  padding: 0 0 1ex 0;
+}
+
+#footer a {
+  color: black;
+  background-color: transparent;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+#footer img {
+  border: 0;
+  vertical-align: middle;
+  margin: 0;
+  float: none;
+}
+
+#footer a:hover {
+  text-decoration: none;
+}

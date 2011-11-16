@@ -1,0 +1,39 @@
+<pre><tt>frame <span style="color: #990000">=</span> wx<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">wxFrame</span></span><span style="color: #990000">(</span>wx<span style="color: #990000">.</span>NULL<span style="color: #990000">,</span> wx<span style="color: #990000">.</span>wxID_ANY<span style="color: #990000">,</span> <span style="color: #FF0000">"wxLua Minimal Demo"</span><span style="color: #990000">,</span>
+                   wx<span style="color: #990000">.</span>wxDefaultPosition<span style="color: #990000">,</span> wx<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">wxSize</span></span><span style="color: #990000">(</span><span style="color: #993399">450</span><span style="color: #990000">,</span> <span style="color: #993399">450</span><span style="color: #990000">)</span><span style="color: #990000">,</span>
+                   wx<span style="color: #990000">.</span>wxDEFAULT_FRAME_STYLE<span style="color: #990000">)</span>
+
+<span style="font-style: italic"><span style="color: #9A1900">-- create a simple file menu</span></span>
+<span style="font-weight: bold"><span style="color: #0000FF">local</span></span> fileMenu <span style="color: #990000">=</span> wx<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">wxMenu</span></span><span style="color: #990000">(</span><span style="color: #990000">)</span>
+<span style="font-weight: bold"><span style="color: #000000">fileMenu:Append</span></span><span style="color: #990000">(</span>wx<span style="color: #990000">.</span>wxID_EXIT<span style="color: #990000">,</span> <span style="color: #FF0000">"E&amp;xit"</span><span style="color: #990000">,</span> <span style="color: #FF0000">"Quit the program"</span><span style="color: #990000">)</span>
+<span style="font-style: italic"><span style="color: #9A1900">-- create a simple help menu</span></span>
+<span style="font-weight: bold"><span style="color: #0000FF">local</span></span> helpMenu <span style="color: #990000">=</span> wx<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">wxMenu</span></span><span style="color: #990000">(</span><span style="color: #990000">)</span>
+<span style="font-weight: bold"><span style="color: #000000">helpMenu:Append</span></span><span style="color: #990000">(</span>wx<span style="color: #990000">.</span>wxID_ABOUT<span style="color: #990000">,</span> <span style="color: #FF0000">"&amp;About"</span><span style="color: #990000">,</span>
+                <span style="color: #FF0000">"About the wxLua Minimal Application"</span><span style="color: #990000">)</span>
+
+<span style="font-style: italic"><span style="color: #9A1900">-- create a menu bar and append the file and help menus</span></span>
+<span style="font-weight: bold"><span style="color: #0000FF">local</span></span> menuBar <span style="color: #990000">=</span> wx<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">wxMenuBar</span></span><span style="color: #990000">(</span><span style="color: #990000">)</span>
+<span style="font-weight: bold"><span style="color: #000000">menuBar:Append</span></span><span style="color: #990000">(</span>fileMenu<span style="color: #990000">,</span> <span style="color: #FF0000">"&amp;File"</span><span style="color: #990000">)</span>
+<span style="font-weight: bold"><span style="color: #000000">menuBar:Append</span></span><span style="color: #990000">(</span>helpMenu<span style="color: #990000">,</span> <span style="color: #FF0000">"&amp;Help"</span><span style="color: #990000">)</span>
+<span style="font-style: italic"><span style="color: #9A1900">-- attach the menu bar into the frame</span></span>
+<span style="font-weight: bold"><span style="color: #000000">frame:SetMenuBar</span></span><span style="color: #990000">(</span>menuBar<span style="color: #990000">)</span>
+
+<span style="font-style: italic"><span style="color: #9A1900">-- create a simple status bar</span></span>
+<span style="font-weight: bold"><span style="color: #000000">frame:CreateStatusBar</span></span><span style="color: #990000">(</span><span style="color: #993399">1</span><span style="color: #990000">)</span>
+<span style="font-weight: bold"><span style="color: #000000">frame:SetStatusText</span></span><span style="color: #990000">(</span><span style="color: #FF0000">"Welcome to wxLua."</span><span style="color: #990000">)</span>
+
+<span style="font-style: italic"><span style="color: #9A1900">-- connect the selection event of the exit menu item to an</span></span>
+<span style="font-style: italic"><span style="color: #9A1900">-- event handler that closes the window</span></span>
+<span style="font-weight: bold"><span style="color: #000000">frame:Connect</span></span><span style="color: #990000">(</span>wx<span style="color: #990000">.</span>wxID_EXIT<span style="color: #990000">,</span> wx<span style="color: #990000">.</span>wxEVT_COMMAND_MENU_SELECTED<span style="color: #990000">,</span>
+              <span style="font-weight: bold"><span style="color: #0000FF">function</span></span> <span style="color: #990000">(</span>event<span style="color: #990000">)</span> <span style="font-weight: bold"><span style="color: #000000">frame:Close</span></span><span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">true</span></span><span style="color: #990000">)</span> <span style="font-weight: bold"><span style="color: #0000FF">end</span></span> <span style="color: #990000">)</span>
+<span style="font-style: italic"><span style="color: #9A1900">-- connect the selection event of the about menu item</span></span>
+<span style="font-weight: bold"><span style="color: #000000">frame:Connect</span></span><span style="color: #990000">(</span>wx<span style="color: #990000">.</span>wxID_ABOUT<span style="color: #990000">,</span> wx<span style="color: #990000">.</span>wxEVT_COMMAND_MENU_SELECTED<span style="color: #990000">,</span>
+        <span style="font-weight: bold"><span style="color: #0000FF">function</span></span> <span style="color: #990000">(</span>event<span style="color: #990000">)</span>
+            wx<span style="color: #990000">.</span><span style="font-weight: bold"><span style="color: #000000">wxMessageBox</span></span><span style="color: #990000">(</span><span style="color: #FF0000">'This is the "About" dialog of the Minimal wxLua sample.'</span><span style="color: #990000">,</span>
+                            <span style="color: #FF0000">"About wxLua"</span><span style="color: #990000">,</span>
+                            wx<span style="color: #990000">.</span>wxOK <span style="color: #990000">+</span> wx<span style="color: #990000">.</span>wxICON_INFORMATION<span style="color: #990000">,</span>
+                            frame<span style="color: #990000">)</span>
+        <span style="font-weight: bold"><span style="color: #0000FF">end</span></span> <span style="color: #990000">)</span>
+
+<span style="font-style: italic"><span style="color: #9A1900">-- finally, show the frame window</span></span>
+<span style="font-weight: bold"><span style="color: #000000">frame:Show</span></span><span style="color: #990000">(</span><span style="font-weight: bold"><span style="color: #0000FF">true</span></span><span style="color: #990000">)</span>
+</tt></pre>

@@ -1,0 +1,32 @@
+<?xml version="1.0" ?>
+<!DOCTYPE luau-repository SYSTEM
+	"http://luau.sourceforge.net/luau-repository-1.1.dtd">
+
+<luau-repository interface="1.1">
+
+	<program-info id="@wxlua.sourceforge.net/wxlua"> 
+
+		<shortname>wxlua</shortname>
+		<fullname>wxLua</fullname>
+		<desc>wxLua provides Lua bindings to the wxWidgets toolkit.</desc> 
+
+	</program-info>
+
+	<software version="2.6.2.1">
+		<date>2006-03-03</date>
+		<interface version="0.0" />
+		<keyword>UNSTABLE</keyword> 
+
+		<short>Short declarative statement(s) about release for language en.</short>
+		<long>
+			Paragraphs describing the release for language en.
+		</long> 
+
+		<package type="autopackage"
+		         size="8546"
+		         md5="15b4548d892b37ce1401d04fc07bd3e1">
+			/wxlua-2.6.2.1.x86.package
+		</package>
+	</software>
+
+</luau-repository>

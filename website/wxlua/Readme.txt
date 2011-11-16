@@ -1,0 +1,2 @@
+This folder contains the most updated META and PAYLOAD parts of the wxLua autopackage for LUAU automatic dependency
+When generating a new autopackage for wxLua, put the .xml, .meta and .payload files here !
