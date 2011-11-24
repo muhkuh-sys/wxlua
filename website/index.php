@@ -1,6 +1,6 @@
 <!-- $Id: index.php,v 1.22 2009/06/03 03:19:39 jrl1 Exp $ -->
 <?php
-  $pagetitle="homepage";
++  $pagetitle="homepage";
   $anchors_href=array("whatis", "start");
   $anchors_text=array("What is wxLua?", "Getting started");
   include_once("header.inc.php");
@@ -15,27 +15,40 @@
 
 
 <h1 id="whatis" class="first">What is wxLua ?</h1>
-<p>wxLua is a set of bindings to the C++ <a href="http://www.wxwidgets.org">wxWidgets</a> 
-<a href="http://en.wikipedia.org/wiki/Cross-platform">cross-platform</a> 
-<a href="http://en.wikipedia.org/wiki/GUI">GUI</a> library for the
-<a href="http://www.lua.org">Lua</a> programming language. 
-You can write complex, graphical, interactive programs with <strong>wxLua</strong>
-to develop and deliver your software with the programming ease of an interpreted language like Lua.
-Nearly all of the functionality of wxWidgets is exposed to Lua, meaning that your
-programs can have windows, dialogs, menus, toolbars, controls, image loading and saving,
-drawing, sockets, streams, printing, clipboard access... and much more.</p>
+<p>wxLua is a 
+<a href="http://www.lua.org">Lua</a> 
+scripting language wrapper around the 
+<a href="http://www.wxwidgets.org">wxWidgets</a> 
+<a href="http://en.wikipedia.org/wiki/Cross-platform">cross-platform</a> C++ 
+<a href="http://en.wikipedia.org/wiki/GUI">GUI</a> library. 
+It consists of two IDE type editors that can edit, debug, and run Lua programs (wxLua and wxLuaEdit), 
+an executable for running standalone wxLua scripts (wxLuaFreeze), 
+a Lua module that may be loaded using require("wx") when using the standard Lua executable, 
+and a library for extending C++ programs with a fast, small, fully embeddable scripting language.
+</p>
 
-<p>Additionally, wxLua can be used in your C++ programs to embed a <em>Lua interpreter</em>
-with the wxWidgets API installed to make development easier or to provide a scripting 
-extension to the program's users. See the <a href="documentation.php">wxLua documentation</a> for more info.</p>
+<p>
+Lua is a small scripting language written in ANSI C that can load and run interpreted 
+scripts as either files or strings. The Lua language is fast, dynamic, and easy to learn. 
+Lua contains a limited number of data types, mainly numbers, booleans, strings, functions, 
+tables, and userdata. Perhaps the most powerful feature of the Lua language is that tables 
+can be used as either numerically indexed arrays or associative arrays that can 
+cross-reference any variable type to any other variable type.
+</p>
+<p>
+wxLua adds to this small and elegant language nearly all of the functionality of the C++ wxWidgets cross-platform GUI library. 
+This includes the ability to create complex user interface dialogs, file and image manipulation, 
+drawing, network sockets, displaying HTML, and printing to name a few. You can use as much or as little of 
+wxWidgets as you like and C++ developers can trim down the size the bindings by turning off preprocessor directives.
+<p>
 
 <p>Want to see an example of how easy it is to write a cross-platform GUI? Here is a simple Lua script which creates a
 wxFrame top level window and a menubar, just add your program to it:</p>
 <div style="z-index: 0"><?php include_once("luasample.lua.html"); ?></div>
-<p>Easy, isn't it ? You can see more samples <a href="http://wxlua.cvs.sourceforge.net/wxlua/wxLua/samples/">here</a>.</p>
+<p>Easy, isn't it? You can see more samples <a href="http://wxlua.svn.sourceforge.net/viewvc/wxlua/trunk/wxLua/samples/">here</a>.</p>
 
 <p><strong>If you use wxLua or you wrote a wxLua-based application, 
-don't forget to <a href="http://news.gmane.org/gmane.comp.lib.wxwidgets.wxlua.user">tell us</a> about it !</strong></p>
+don't forget to <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=wxlua-users">tell us</a> about it !</strong></p>
 
 
 <h1 id="start">Getting started</h1>

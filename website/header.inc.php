@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
   <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-    <meta name="keywords" content="wxLua, wxWidgets, component, C++, bakefile, lua, bindings, embedded, interpreter" />
+    <meta name="keywords" content="wxLua, wxWidgets, component, C++, bakefile, Lua, bindings, embedded, interpreter, GUI, Windows, Linux, OSX" />
     <meta name="author" content="Francesco Montorsi (webdesign by haran)" />
     <meta name="generator" content="haran" />
 
@@ -27,14 +27,14 @@
             </td>
             <td style="width:50%; vertical-align: middle;">
                 <h1 class="headerTitle">
-                    wxLua<span> - <a href="http://www.wxwidgets.org">wxWidgets</a> bindings for <a href="http://www.lua.org">Lua</a></span>
+                    wxLua - <a href="http://www.wxwidgets.org">wxWidgets</a> bindings for <a href="http://www.lua.org">Lua</a>
                 </h1>
             </td>
          </tr>
       </table>
 
         <?php
-            function writeSideBarEntry($entryname, $entrytitle)
+            function writeSideBarEntry($entryname, $entrytitle, $entrytip)
             {
                 global $pagetitle;
 
@@ -43,9 +43,10 @@
                 if ($isthispage)
                     echo "<span class='thisPage'>&rsaquo; ";
                 else
-                    echo "<a href='" . strtolower($entryname) . ".php' title='$entrytitle'>";
+                    echo "<a href='" . strtolower($entryname) . ".php' title='$entrytip'>";
 
-                echo ucfirst($entryname);
+                // echo ucfirst($entryname); 
+                echo $entrytitle;
 
                 if ($isthispage)
                     echo ' &lsaquo;</span>';
@@ -56,12 +57,12 @@
 
         <div class="subHeader">
             <span class="doNotDisplay">Navigation: </span>
-            <?php writeSideBarEntry("index", "Home page") ?> |
-            <?php writeSideBarEntry("license", "wxLua license") ?> |
-            <?php writeSideBarEntry("screenshots", "wxLua in action!") ?> |
-            <?php writeSideBarEntry("download", "Download it!") ?> |
-            <?php writeSideBarEntry("documentation", "wxLua docs") ?> |
-            <?php writeSideBarEntry("support", "Need help?") ?>
+            <?php writeSideBarEntry("index", "Home", "wxLua home page") ?> |
+            <?php writeSideBarEntry("license", "License", "") ?> |
+            <?php writeSideBarEntry("screenshots", "Screenshots", "") ?> |
+            <?php writeSideBarEntry("download", "Downloads", "") ?> |
+            <?php writeSideBarEntry("documentation", "Documentation", "") ?> |
+            <?php writeSideBarEntry("support", "Support", "Mailing lists and other help") ?>
         </div>
     </div>
 
@@ -81,15 +82,14 @@
 
         <p class="sideBarTitle">Links</p>
         <ul>
-              <li><a href="http://sourceforge.net/projects/wxlua" title="The project page at Sourceforge.net">Project page</a></li>
+              <li><a href="http://sourceforge.net/projects/wxlua" title="The wxLua project page at Sourceforge.net">Sourceforge Project</a></li>
               <li><a href="http://www.wxwidgets.org" title="Learn more about wxWidgets">wxWidgets</a></li>
               <li><a href="http://www.wxwidgets.org/wiki" title="The official wxWidgets wiki">wxWiki</a></li>
-              <li><a href="http://www.lua.org" title="Learn more about lua">Lua</a></li>
-              <li><a href="http://lua-users.org/wiki" title="The official lua wiki">LuaWiki</a></li>
+              <li><a href="http://www.lua.org" title="Learn more about Lua">Lua</a></li>
+              <li><a href="http://lua-users.org/wiki" title="The official Lua wiki">Lua-Wiki</a></li>
         </ul>
       </div>
     </div>
 
     <!-- ##### Main Copy ##### -->
     <div id="main-copy">
-

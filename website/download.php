@@ -1,9 +1,8 @@
 <!-- $Id: download.php,v 1.34 2009/06/09 21:52:09 jrl1 Exp $ -->
 <?php
   $pagetitle="download";
-  $anchors_href=array("win", "linux", "mac", "sources", "browsesources");
-  $anchors_text=array("...for Windows", "...for Linux", "...for Macintosh", "Sources",
-                      "Browse sources");
+  $anchors_href=array("win", "linux", "mac", "sources", "subversion", "older");
+  $anchors_text=array("Windows", "Linux", "Macintosh", "Sources", "Subversion", "Older releases");
   include_once("header.inc.php");
 
 
@@ -65,14 +64,21 @@
 </div>
 
 <h1 class="first">Download wxLua...</h1>
-<p><strong>Sources or binaries?</strong> wxLua can be used as an <strong>external library by C++ projects</strong>
-in need of a Lua interpreter or as an <strong>application</strong> or <strong>module</strong> for programmers
-who want to write applications entirely in Lua.<br/><br/>
+<p><strong>Sources or binaries?</strong> wxLua can be used as a <strong>C++ library</strong> for projects
+that want to add scripting capabilities using a Lua interpreter to their wxWidgets programs or as an 
+<strong>application</strong> or <strong>Lua module</strong> for programmers
+who want to write, debug, and execute applications written entirely in Lua.<br/><br/>
 
-If you are interested to wxLua as external, embeddable, library you should download the <strong>source package</strong>.<br/>
-Instead, if you are interested to wxLua for writing programs only, then go with the <strong>binaries</strong> !</p>
+If you are interested in using wxLua as a C++ library to extend your program, you should download the 
+<strong>source package</strong> and compile the wxLua libraries to link to.<br/>
 
-<p><b>You can view a complete list of the downloads <a href="http://sourceforge.net/project/showfiles.php?group_id=140042">here<alt="Downloads"/></a>.</b></p>
+Instead, if you are interested in using wxLua to write and execute Lua programs, then go with the <strong>binaries</strong>, if available.</p>
+
+Don't forget to read the documentation about the wxLua <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxLua_Applications">executables</a> 
+and how to run the <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxLua_Samples"> samples</a>.
+
+<p><b>You can view a complete list of the downloads on Sourceforge <a href="http://sourceforge.net/project/showfiles.php?group_id=140042">here<alt="Downloads"/></a>.</b></p>
+
 
 <div class="indented">
 <h2 id="win">...for Windows</h2>
@@ -80,7 +86,8 @@ Instead, if you are interested to wxLua for writing programs only, then go with 
 <p><a href="<?php echo $winlink; ?>">Binary package</a> ~ <?php echo $winsize; ?> MB: self-contained; you won't need anything else.</p>
 <p>You may also want to download a <a href="<?php echo $dlllink; ?>">package</a> containing the
 DLLs required for using wxWidgets bindings as a <a href="http://lua-users.org/wiki/BuildingModules">Lua module</a>.</p>
-<p>For problems with installation, see the <a href="support.php">support page</a>.</p>
+<p>Simply unzip the binaries into a new directory and run the programs.<br/>
+For problems with installation, see the <a href="support.php">support page</a>.</p>
 </div>
 
 <div class="indented">
@@ -106,26 +113,26 @@ Please visit Charles Shapiro's website, <a href="http://tomshiro.org/lua-maemo/"
 
 <div class="indented">
 <h2 id="sources">Sources</h2>
-<p>Source packages are available in two formats which contain exactly the same things:</p>
+<p>See below about browsing the sources to see what the package contains.</p>
 <ul>
 <li><a href="<?php echo $gzlink; ?>">Source package</a> (.tar.gz) </li>
 </ul>
-<p>See <a href="docs/install.html">install.html</a> for info about required libraries and how to compile and install them</p>
+<p>See <a href="docs/install.html">install.html</a> for info about required libraries and how to compile and install them.</p>
 </div>
 
 <div class="indented">
-<h2 id="browsesources">Browse the source files online</h2>
-<p>The Sourceforge CVS repository or the source files used to create the nightly tarball can be browsed online as well:</p>
+<h2 id="subversion">Browse the Sourceforge Subversion (SVN) repository online</h2>
+<p>November 21, 2011 - wxLua has switched from CVS to Subversion and all further development will take place in SVN.</p>
 <ul>
-<li>Browse the wxLua <a href="http://wxlua.cvs.sourceforge.net/wxlua/wxLua/">CVS repository</a> on Sourceforge</li>
+<li>Browse the wxLua <a href="http://wxlua.svn.sourceforge.net/viewvc/wxlua/trunk/wxLua/">SVN repository</a> on Sourceforge</li>
+<!-- <li>Browse the wxLua <a href="http://wxlua.cvs.sourceforge.net/wxlua/wxLua/">CVS repository</a> on Sourceforge</li> -->
+<li>Checkout the wxLua SVN module using <a href="https://sourceforge.net/scm/?type=svn&group_id=140042">these instructions</a></li>
 </ul>
 </div>
 
-<br/>
-<p><strong>NOTE</strong>: For bleeding edge versions of wxLua, which work for example with the latest wxWidgets CVS, you should
-checkout the wxLua CVS module using <a href="http://sourceforge.net/cvs/?group_id=140042">these instructions</a>.</p>
-
-<p><strong>NOTE 2</strong>: This page lists only the latest release of wxLua. If you are interested to previous releases visit
-the wxLua <a href="http://sourceforge.net/project/showfiles.php?group_id=140042">download page at SourceForge</a>.</p>
+<div class="indented">
+<h2 id="older">Older releases</h2>
+<p>A complete list of the wxLua downloads on Sourceforge are <a href="http://sourceforge.net/project/showfiles.php?group_id=140042">here<alt="Downloads"/></a>.
+</div>
 
 <?php include_once("footer.inc.php"); ?>

@@ -2,7 +2,7 @@
 <?php
   $pagetitle="screenshots";
   $anchors_href=array("win", "gtk2", "osx", "other");
-  $anchors_text=array("wxLua on Windows", "wxLua on GTK2", "wxLua on OSX", "wxLua on other platforms ?");
+  $anchors_text=array("wxLua on Windows", "wxLua on Linux", "wxLua on OSX", "wxLua on ...");
   include_once("header.inc.php");
 
   function write_screenshot($url, $title)
@@ -13,8 +13,8 @@
   }
 ?>
 
-<h1 id="win" class="first">wxLua on MS Windows</h1>
-<p>wxLua makes it simple to write applications perfectly integrated in Windows, thanks to the <strong>wxMSW</strong> port of <a href="http://www.wxwidgets.org">wxWidgets</a> toolkit:</p>
+<h1 id="win" class="first">wxLua on MS Windows (2000, XP, Vista, 7)</h1>
+<p>wxLua makes it simple to write applications that look natural in Windows using the <strong>wxMSW</strong> port of <a href="http://www.wxwidgets.org">wxWidgets</a> toolkit:</p>
 <div style="text-align: center">
     <?php
         write_screenshot("wxluacan_win.png",
@@ -26,10 +26,10 @@
     ?>
 </div>
 
-<h1 id="gtk2">wxLua on GTK+ 2</h1>
-<p>The <a href="http://www.wxwidgets.org">wxWidgets</a> port under Linux platforms is called <strong>wxGTK</strong>
-as it uses the <a href="http://www.gtk.org">GTK+ 2</a> libraries for drawing and thus creates applications with
-the same <em>look &amp; feel</em> of native GTK applications:</p>
+<h1 id="gtk2">wxLua on Linux with GTK+2</h1>
+<p>The <a href="http://www.wxwidgets.org">wxWidgets</a> port on Linux platforms is called <strong>wxGTK</strong>
+as it uses the <a href="http://www.gtk.org">GTK+ 2</a> libraries for drawing. Applications have
+the same <em>look &amp; feel</em> as native GTK applications:</p>
 <div style="text-align: center">
     <?php
         write_screenshot("wxluacan_gtk2.png",
@@ -65,7 +65,8 @@ the same <em>look &amp; feel</em> of native GTK applications:</p>
 </div>
 
 <h1 id="other">wxLua on other platforms ?</h1>
-<p>The other ports where <a href="http://www.wxwidgets.org">wxWidgets</a> is available for may also work with wxLua, but we need testers: if you use OS2, MGL or PalmOS, and would like to get wxLua working there, then please
-contact us !</p>
+<p><a href="http://www.wxwidgets.org">wxWidgets</a> available for other platforms and may also work with wxLua, 
+but we need testers. If you use OS2, MGL, or PalmOS, and would like to get wxLua working there, please
+contact us.</p>
 
 <?php include_once("footer.inc.php"); ?>
