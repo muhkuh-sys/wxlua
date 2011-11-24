@@ -44,7 +44,9 @@ wxWidgets as you like and C++ developers can trim down the size the bindings by 
 
 <p>Want to see an example of how easy it is to write a cross-platform GUI? Here is a simple Lua script which creates a
 wxFrame top level window and a menubar, just add your program to it:</p>
-<div style="z-index: 0"><?php include_once("luasample.lua.html"); ?></div>
+
+<div style="z-index: 0; width: 90%"><?php include_once("luasample.lua.html"); ?></div>
+
 <p>Easy, isn't it? You can see more samples <a href="http://wxlua.svn.sourceforge.net/viewvc/wxlua/trunk/wxLua/samples/">here</a>.</p>
 
 <p><strong>If you use wxLua or you wrote a wxLua-based application, 
