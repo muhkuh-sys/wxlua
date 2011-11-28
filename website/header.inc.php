@@ -18,17 +18,18 @@
   <body>
     <!-- ##### Header ##### -->
     <div id="header">
-      <table border="0" style="width:100%; vertical-align: middle;">
+      <table border="0" cellpadding="2" style="width:100%; vertical-align: middle;">
          <tr style="vertical-align: middle; margin:0; padding: 0">
-            <td style="width:50%; margin:0; padding: 0">
+            <td>
                 <a href="http://wxlua.sourceforge.net">
-                    <img src="images/wxlualogo.png" style="border:0" alt="The wxLua logo"/>
+                    <img src="images/logoonly.png" style="border:0" alt="The wxLua logo"/>
                 </a>
             </td>
-            <td style="width:50%; vertical-align: middle;">
-                <h1 class="headerTitle">
-                    wxLua - <a href="http://www.wxwidgets.org">wxWidgets</a> bindings for <a href="http://www.lua.org">Lua</a>
-                </h1>
+            <td align="right" style="vertical-align: middle;">
+                <span class="headerTitle">wxLua</span><br>
+                <span class="headerSubTitle">
+                <a href="http://www.wxwidgets.org">wxWidgets</a> bindings for <a href="http://www.lua.org">Lua</a>
+                </span>
             </td>
          </tr>
       </table>
