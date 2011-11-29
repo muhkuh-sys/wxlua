@@ -74,8 +74,8 @@ If you are interested in using wxLua as a C++ library to extend your program, yo
 
 Instead, if you are interested in using wxLua to write and execute Lua programs, then go with the <strong>binaries</strong>, if available.</p>
 
-Don't forget to read the documentation about the wxLua <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxLua_Applications">executables</a> 
-and how to run the <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxLua_Samples"> samples</a>.
+Don't forget to read the documentation about the wxLua <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxlua_applications">executables</a> 
+and how to run the <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxlua_samples"> samples</a>.
 
 <p><b>You can view a complete list of the downloads on Sourceforge <a href="http://sourceforge.net/project/showfiles.php?group_id=140042">here<alt="Downloads"/></a>.</b></p>
 

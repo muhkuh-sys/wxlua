@@ -61,7 +61,7 @@ pre {
   /* these two lines makes the rendering of the header nice also
      when viewing the webpage with a browser window wider than the
      header-background.png image; in fact the right portion of the
-     background will be drawn in black which is the colour in the
+     background will be drawn in white which is the colour in the
      right end of the gradient image ;)
    */
   background-position: left;
@@ -69,7 +69,7 @@ pre {
 }
 
 .headerTitle {
-  font-size: 50px;
+  font-size: 45px;
   font-weight: bold;
   color: #000011;
   margin-right: 2em;
@@ -84,7 +84,7 @@ pre {
 .headerSubTitle {
   color: #003366;
   font-weight: bold;
-  font-size: 25px;
+  font-size: 20px;
   margin-right: 1em;
 }
 

@@ -65,7 +65,7 @@ the same <em>look &amp; feel</em> as native GTK applications:</p>
 </div>
 
 <h1 id="other">wxLua on other platforms ?</h1>
-<p><a href="http://www.wxwidgets.org">wxWidgets</a> available for other platforms and may also work with wxLua, 
+<p><a href="http://www.wxwidgets.org">wxWidgets</a> is available for other platforms and may also work with wxLua, 
 but we need testers. If you use OS2, MGL, or PalmOS, and would like to get wxLua working there, please
 contact us.</p>
 
