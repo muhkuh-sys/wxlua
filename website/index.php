@@ -1,4 +1,3 @@
-<!-- $Id: index.php,v 1.22 2009/06/03 03:19:39 jrl1 Exp $ -->
 <?php
 +  $pagetitle="homepage";
   $anchors_href=array("whatis", "start");
@@ -42,34 +41,63 @@ drawing, network sockets, displaying HTML, and printing to name a few. You can u
 wxWidgets as you like and C++ developers can trim down the size the bindings by turning off preprocessor directives.
 <p>
 
-<p>Want to see an example of how easy it is to write a cross-platform GUI? Here is a simple Lua script which creates a
-wxFrame top level window and a menubar, just add your program to it:</p>
+<p>The simple wxLua script below creates a wxFrame top-level window, amenubar, and a statusbar.  
+More examples of wxLua programs can be found in the 
+<a href="http://wxlua.svn.sourceforge.net/viewvc/wxlua/trunk/wxLua/samples/">samples directory</a>
+of the wxLua distribution.</p>
 
 <div style="z-index: 0; width: 90%"><?php include_once("luasample.lua.html"); ?></div>
-
-<p>Easy, isn't it? You can see more samples <a href="http://wxlua.svn.sourceforge.net/viewvc/wxlua/trunk/wxLua/samples/">here</a>.</p>
-
-<p><strong>If you use wxLua or you wrote a wxLua-based application, 
-don't forget to <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=wxlua-users">tell us</a> about it !</strong></p>
 
 
 <h1 id="start">Getting started</h1>
 <ol>
-<li><p><strong>Get the tools:</strong> The <a href="download.php">download page</a> contains
-the binary packages which allow you to get started in a few minutes. You can use the <strong>wxLua</strong>
-and <strong>wxLuaEdit</strong> applications write, debug, and run your (wx)Lua programs.</p></li>
-
-<li>
-<p><strong>Learn Lua:</strong> Once you've got wxLua installed and running, you need to learn how to use it. 
-A good way to learn <a href="http://www.lua.org">Lua</a>, in case you don't already know, is to refer to the
-<a href="http://lua-users.org/wiki/TutorialDirectory">tutorial</a> hosted on the Lua wiki.</p></li>
-
-<li>
-<p><strong>Learn wxLua:</strong> Now that you have some familiarity with the Lua language you can learn 
-about wxWidgets. There is information about the wxLua bindings on the <a href="documentation.php">documentation page</a> 
-and the samples, in the <tt>wxLua/samples</tt> directory, might be helpful too.</p></li>
+  <li>
+    <strong>Get wxLua:</strong> 
+    <ul>
+      <li> 
+        There are binary packages for selected platforms on the <a href="download.php">download page</a>.  
+        You will have to compile wxLua for other platforms as described in the <a href="docs/install.html">install</a> document.
+      </li>
+      <li>
+        Once installed, the <strong>wxLua</strong> and <strong>wxLuaEdit</strong> applications can be used to write, debug, and run your (wx)Lua programs.
+      </li>
+    </ul>
+  </li>
+  <li>
+    <strong>Learn <a href="http://www.lua.org">Lua</a>:</strong>
+    <ul>
+      <li>
+        Review the <a href="http://www.lua.org/manual/5.1/">Lua Reference Manual</a>, a concise description of the <a href="http://www.lua.org">Lua</a> language.
+      <li>
+        There are also Lua <a href="http://lua-users.org/wiki/TutorialDirectory">tutorials</a> hosted on the Lua wiki.
+      </li>
+    </ul>
+  </li>
+  <li>
+    <strong>Learn wxLua:</strong>
+    <ul>
+      <li>
+        Read the <a href="docs/wxlua.html">wxLua Manual</a> for a brief introduction to Lua, a description of the wxLua bindings to wxWidgets, the components of wxLua, how to interface to it in C++...
+      </li>
+      <li>
+        Further information can be found on the <a href="documentation.php">documentation page</a>.
+      </li>
+      <li>
+        Read and run some of the <a href="http://wxlua.svn.sourceforge.net/viewvc/wxlua/trunk/wxLua/samples/">wxLua samples</a>.
+      </li>
+    </ul>
+  </li>
 </ol>
 
-<p>Finally, if you need further help, please look at the <a href="support.php">support page</a>.</p>
+<ul>
+  <li>
+    If you need further help, please look at the <a href="support.php">support page</a>.
+  </li>
+  <li>
+    <strong>If you use wxLua or wrote a wxLua based application,
+    don't forget to <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=wxlua-users">tell us</a> about it !</strong>
+  </li>
+</ul>
+
 
 <?php include_once("footer.inc.php"); ?>

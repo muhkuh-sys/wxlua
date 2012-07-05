@@ -8,7 +8,7 @@
 
 <h1 id="reference" class="first">Reference manuals</h1>
 <p>This page contains links to information about learning and using wxLua, Lua, and wxWidgets.<br/>
-If you're looking for Lua tutorials, see the &quot;Getting started&quot; section on the <a href="index.php">homepage</a>...</p>
+See also the &quot;Getting started&quot; section on the <a href="index.php">homepage</a>...</p>
 
 <div class="indented">
 <h2 style="padding-top: 0">wxLua documentation</h2>
@@ -62,16 +62,16 @@ to see how they're constructed and how they're merely simplified versions of the
 </ul>
 
 <h1 id="authors">Authors</h1>
-<p>The wxLua development team is composed by various developers (here listed in <strong>chronological order</strong>):</p>
+<p>wxLua developers listed in chronological order:</p>
 <ol>
-<li><strong>Paul and J Winwood</strong>: the original authors. Now not working actively anymore.</li>
-<li><strong>Francis Irving</strong>: author of the wxLua standalone application. Now not working actively anymore.</li>
-<li><strong>John Labenski</strong>: author of most of the wxLuaEdit application and wxLua lead developer and maintainer.</li>
-<li><strong>Ray Gilbert</strong>: worked on the wxLua bindings parser.</li>
-<li><strong>Klaas Holwerda</strong>: author of wxLuaCan sample and indefatigable source of ideas.</li>
-<li><strong>Francesco Montorsi</strong>: worked on the bakefile-based build system, on this website and the wxLua packaging.</li>
-<li><strong>Anders F Björklund</strong>: contributed wxMac screenshots and created wxMac package.</li>
-<li><strong>Reuben Thomas</strong>: wrote the bit library that wxLua includes.</li>
+<li><strong>Paul and J Winwood</strong>: The original authors. No longer active.</li>
+<li><strong>Francis Irving</strong>: Author of the wxLua standalone application. No longer active.</li>
+<li><strong>John Labenski</strong>: Updated and reworked wxLua in 2004 to make it modular, embeddable, and allow multiple instances. Currently developing and maintaining wxLua.</li>
+<li><strong>Ray Gilbert</strong>: Rewrote the wxLua bindings parser.</li>
+<li><strong>Klaas Holwerda</strong>: Author of wxLuaCan sample and indefatigable source of ideas.</li>
+<li><strong>Francesco Montorsi</strong>: Worked on the bakefile-based build system, on this website, and the wxLua packaging.</li>
+<li><strong>Anders F Björklund</strong>:Contributed wxMac screenshots and created wxMac package.</li>
+<li><strong>Reuben Thomas</strong>: Wrote the bit library that wxLua includes.</li>
 <li><strong>Did we forget you?</strong> contact us and we'll add you.</li>
 </ol>
 <p>Credits also goes to all those tools which lets us to maintain the project: <a href="http://bakefile.sourceforge.net">bakefile</a>, <a href="http://www.doxygen.org">doxygen</a>, <a href="http://www.autopackage.org">autopackage</a> projects and obviously to <a href="http://www.wxwidgets.org">wxWidgets toolkit</a> and to <a href="http://www.sourceforge.net">SourceForge.net</a> for hosting the project.</p>
