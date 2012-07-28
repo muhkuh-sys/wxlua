@@ -84,8 +84,9 @@
         <p class="sideBarTitle">Links</p>
         <ul>
               <li><a href="http://sourceforge.net/projects/wxlua" title="The wxLua project page at Sourceforge.net">Sourceforge Project</a></li>
+              <li><a href="https://sourceforge.net/export/rss2_project.php?group_id=140042" title="RSS feeds for the wxLua project">wxLua RSS feeds</a></li>
               <li><a href="http://www.wxwidgets.org" title="Learn more about wxWidgets">wxWidgets</a></li>
-              <li><a href="http://www.wxwidgets.org/wiki" title="The official wxWidgets wiki">wxWiki</a></li>
+              <li><a href="http://www.wxwidgets.org/wiki" title="The official wxWidgets wiki">wxWidgets-Wiki</a></li>
               <li><a href="http://www.lua.org" title="Learn more about Lua">Lua</a></li>
               <li><a href="http://lua-users.org/wiki" title="The official Lua wiki">Lua-Wiki</a></li>
         </ul>
