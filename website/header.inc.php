@@ -22,7 +22,7 @@
          <tr style="vertical-align: middle; margin:0; padding: 0">
             <td>
                 <a href="http://wxlua.sourceforge.net">
-                    <img src="images/logoonly.png" style="border:0" alt="The wxLua logo"/>
+                    <img src="images/wxlualogo.png" style="border:0" alt="The wxLua logo"/>
                 </a>
             </td>
             <td align="right" style="vertical-align: middle;">
