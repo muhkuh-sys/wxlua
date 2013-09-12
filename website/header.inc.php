@@ -4,8 +4,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-AU">
   <head>
     <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
-    <meta name="keywords" content="wxLua, wxWidgets, component, C++, bakefile, Lua, bindings, embedded, interpreter, GUI, Windows, Linux, OSX" />
-    <meta name="author" content="Francesco Montorsi (webdesign by haran)" />
+    <meta name="keywords" content="wxLua, wxWidgets, component, C++, Lua, bindings, embedded, interpreter, GUI, Windows, Linux, OSX" />
+    <meta name="author" content="John Labenski, Francesco Montorsi (webdesign by haran)" />
     <meta name="generator" content="haran" />
 
     <link rel="stylesheet" type="text/css" href="style.css" title="Gila (screen)" />
@@ -58,12 +58,12 @@
 
         <div class="subHeader">
             <span class="doNotDisplay">Navigation: </span>
-            <?php writeSideBarEntry("index", "Home", "wxLua home page") ?> |
-            <?php writeSideBarEntry("license", "License", "") ?> |
-            <?php writeSideBarEntry("screenshots", "Screenshots", "") ?> |
-            <?php writeSideBarEntry("download", "Downloads", "") ?> |
+            <?php writeSideBarEntry("index",         "Home",          "wxLua home page") ?> |
+            <?php writeSideBarEntry("license",       "License",       "") ?> |
+            <?php writeSideBarEntry("screenshots",   "Screenshots",   "") ?> |
+            <?php writeSideBarEntry("download",      "Downloads",     "") ?> |
             <?php writeSideBarEntry("documentation", "Documentation", "") ?> |
-            <?php writeSideBarEntry("support", "Support", "Mailing lists and other help") ?>
+            <?php writeSideBarEntry("support",       "Support",       "Mailing lists and other help") ?>
         </div>
     </div>
 
@@ -84,7 +84,7 @@
         <p class="sideBarTitle">Links</p>
         <ul>
               <li><a href="http://sourceforge.net/projects/wxlua" title="The wxLua project page at Sourceforge.net">Sourceforge Project</a></li>
-              <li><a href="https://sourceforge.net/export/rss2_project.php?group_id=140042" title="RSS feeds for the wxLua project">wxLua RSS feeds</a></li>
+              <li><a href="https://sourceforge.net/p/wxlua/news/feed" title="RSS feeds for the wxLua project">wxLua RSS feeds</a></li>
               <li><a href="http://www.wxwidgets.org" title="Learn more about wxWidgets">wxWidgets</a></li>
               <li><a href="http://www.wxwidgets.org/wiki" title="The official wxWidgets wiki">wxWidgets-Wiki</a></li>
               <li><a href="http://www.lua.org" title="Learn more about Lua">Lua</a></li>

@@ -14,7 +14,8 @@
 ?>
 
 <h1 id="win" class="first">wxLua on MS Windows (2000, XP, Vista, 7)</h1>
-<p>wxLua makes it simple to write applications that look natural in Windows using the <strong>wxMSW</strong> port of <a href="http://www.wxwidgets.org">wxWidgets</a> toolkit:</p>
+<p>wxLua makes it simple to write applications that look natural in Windows using the 
+<strong>wxMSW</strong> port of <a href="http://www.wxwidgets.org">wxWidgets</a> toolkit:</p>
 <div style="text-align: center">
     <?php
         write_screenshot("wxluacan_win.png",
@@ -46,7 +47,8 @@ the same <em>look &amp; feel</em> as native GTK applications:</p>
 </div>
 
 <h1 id="osx">wxLua on Mac OS X</h1>
-<p>The <a href="http://www.wxwidgets.org">wxWidgets</a> port under Macintosh platforms is called <strong>wxMac</strong> and makes wxLua applications look exactly like native Mac applications:</p>
+<p>The <a href="http://www.wxwidgets.org">wxWidgets</a> port under Macintosh 
+platforms is called <strong>wxMac</strong> and makes wxLua applications look exactly like native Mac applications:</p>
 <div style="text-align: center">
     <?php
         write_screenshot("wxluacan_mac.png",

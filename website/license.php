@@ -6,7 +6,8 @@
   include_once("header.inc.php");
 ?>
 
-<img src="http://www.opensource.org/trademarks/opensource/web/opensource-75x65.gif" alt="wxWidgets and wxLua are Certified Open Source Software" style="margin: 2em 3em 3em 3em; float:right"/>
+<img src="http://www.opensource.org/trademarks/opensource/web/opensource-75x65.gif" 
+alt="wxWidgets and wxLua are Certified Open Source Software" style="margin: 2em 3em 3em 3em; float:right"/>
 
 <h1 id="wxlualicense" class="first">wxLua license</h1>
 <p>wxLua is released with the same license as wxWidgets.<br/>

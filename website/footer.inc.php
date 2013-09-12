@@ -16,8 +16,8 @@
 
       <td style="text-align: center;">
         <strong>Last update to this webpage &raquo;</strong> <?php echo date("F d Y H:i:s.", getlastmod()); ?><br/>
-        <strong>Webmaster: John Labenski, Francesco Montorsi &bull; Web design: <a href="http://www.oswd.org/user/profile/id/3013">Haran</a></strong>
-
+        <strong>Webmaster: John Labenski, Francesco Montorsi &bull; 
+        Web design: <a href="http://www.oswd.org/user/profile/id/3013">Haran</a></strong>
       </td>
 
       <td style="text-align: right; width:25%">

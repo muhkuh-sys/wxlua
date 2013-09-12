@@ -14,9 +14,7 @@
 
 
 <h1 id="whatis" class="first">What is wxLua ?</h1>
-<p>wxLua is a 
-<a href="http://www.lua.org">Lua</a> 
-scripting language wrapper around the 
+<p>wxLua is a <a href="http://www.lua.org">Lua</a> scripting language wrapper around the 
 <a href="http://www.wxwidgets.org">wxWidgets</a> 
 <a href="http://en.wikipedia.org/wiki/Cross-platform">cross-platform</a> C++ 
 <a href="http://en.wikipedia.org/wiki/GUI">GUI</a> library. 
@@ -35,15 +33,18 @@ can be used as either numerically indexed arrays or associative arrays that can
 cross-reference any variable type to any other variable type.
 </p>
 <p>
-wxLua adds to this small and elegant language nearly all of the functionality of the C++ wxWidgets cross-platform GUI library. 
-This includes the ability to create complex user interface dialogs, file and image manipulation, 
-drawing, network sockets, displaying HTML, and printing to name a few. You can use as much or as little of 
-wxWidgets as you like and C++ developers can trim down the size the bindings by turning off preprocessor directives.
+wxLua adds to this small and elegant language nearly all of the functionality 
+of the C++ wxWidgets cross-platform GUI library. 
+This includes the ability to create complex user interface dialogs, 
+file and image manipulation, drawing, network sockets, displaying HTML, 
+and printing to name a few. You can use as much or as little of 
+wxWidgets as you like and C++ developers can trim down the size the 
+bindings by turning off preprocessor directives.
 <p>
 
-<p>The simple wxLua script below creates a wxFrame top-level window, amenubar, and a statusbar.  
+<p>The simple wxLua script below creates a wxFrame top-level window, with a menubar, and a statusbar.  
 More examples of wxLua programs can be found in the 
-<a href="http://wxlua.svn.sourceforge.net/viewvc/wxlua/trunk/wxLua/samples/">samples directory</a>
+<a href="https://sourceforge.net/p/wxlua/svn/HEAD/tree/trunk/wxLua/samples/">samples directory</a>
 of the wxLua distribution.</p>
 
 <div style="z-index: 0; width: 90%"><?php include_once("luasample.lua.html"); ?></div>
@@ -59,7 +60,8 @@ of the wxLua distribution.</p>
         You will have to compile wxLua for other platforms as described in the <a href="docs/install.html">install</a> document.
       </li>
       <li>
-        Once installed, the <strong>wxLua</strong> and <strong>wxLuaEdit</strong> applications can be used to write, debug, and run your (wx)Lua programs.
+        Once installed, the <strong>wxLua</strong> and <strong>wxLuaEdit</strong> 
+        applications can be used to write, debug, and run your (wx)Lua programs.
       </li>
     </ul>
   </li>
@@ -67,7 +69,8 @@ of the wxLua distribution.</p>
     <strong>Learn <a href="http://www.lua.org">Lua</a>:</strong>
     <ul>
       <li>
-        Review the <a href="http://www.lua.org/manual/5.1/">Lua Reference Manual</a>, a concise description of the <a href="http://www.lua.org">Lua</a> language.
+        Review the <a href="http://www.lua.org/manual">Lua Reference Manual</a>, 
+        a concise description of the <a href="http://www.lua.org">Lua</a> language.
       <li>
         There are also Lua <a href="http://lua-users.org/wiki/TutorialDirectory">tutorials</a> hosted on the Lua wiki.
       </li>
@@ -77,7 +80,8 @@ of the wxLua distribution.</p>
     <strong>Learn wxLua:</strong>
     <ul>
       <li>
-        Read the <a href="docs/wxlua.html">wxLua Manual</a> for a brief introduction to Lua, a description of the wxLua bindings to wxWidgets, the components of wxLua, how to interface to it in C++...
+        Read the <a href="docs/wxlua.html">wxLua Manual</a> for a brief introduction to Lua, 
+        a description of the wxLua bindings to wxWidgets, the components of wxLua, how to interface to it in C++...
       </li>
       <li>
         Further information can be found on the <a href="documentation.php">documentation page</a>.
