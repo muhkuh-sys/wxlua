@@ -14,7 +14,8 @@
 
 
 <h1 id="whatis" class="first">What is wxLua ?</h1>
-<p>wxLua is a <a href="http://www.lua.org">Lua</a> scripting language wrapper around the 
+<p>
+wxLua is a <a href="http://www.lua.org">Lua</a> scripting language wrapper around the 
 <a href="http://www.wxwidgets.org">wxWidgets</a> 
 <a href="http://en.wikipedia.org/wiki/Cross-platform">cross-platform</a> C++ 
 <a href="http://en.wikipedia.org/wiki/GUI">GUI</a> library. 
@@ -23,7 +24,6 @@ an executable for running standalone wxLua scripts (wxLuaFreeze),
 a Lua module that may be loaded using require("wx") when using the standard Lua executable, 
 and a library for extending C++ programs with a fast, small, fully embeddable scripting language.
 </p>
-
 <p>
 Lua is a small scripting language written in ANSI C that can load and run interpreted 
 scripts as either files or strings. The Lua language is fast, dynamic, and easy to learn. 
@@ -40,15 +40,19 @@ file and image manipulation, drawing, network sockets, displaying HTML,
 and printing to name a few. You can use as much or as little of 
 wxWidgets as you like and C++ developers can trim down the size the 
 bindings by turning off preprocessor directives.
+</p>
 <p>
+wxLua can be built against wxWidgets 2.8.x, 2.9.x and Lua versions 5.1, 5.2, and LuaJIT.
+</p>
 
-<p>The simple wxLua script below creates a wxFrame top-level window, with a menubar, and a statusbar.  
+<p>
+The simple wxLua script below creates a wxFrame top-level window, with a menubar, and a statusbar.  
 More examples of wxLua programs can be found in the 
 <a href="https://sourceforge.net/p/wxlua/svn/HEAD/tree/trunk/wxLua/samples/">samples directory</a>
-of the wxLua distribution.</p>
+of the wxLua distribution.
+</p>
 
 <div style="z-index: 0; width: 90%"><?php include_once("luasample.lua.html"); ?></div>
-
 
 <h1 id="start">Getting started</h1>
 <ol>
@@ -102,6 +106,5 @@ of the wxLua distribution.</p>
     don't forget to <a href="http://sourceforge.net/mailarchive/forum.php?forum_name=wxlua-users">tell us</a> about it !</strong>
   </li>
 </ul>
-
 
 <?php include_once("footer.inc.php"); ?>
