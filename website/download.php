@@ -96,11 +96,12 @@ debug, and execute applications written entirely in Lua.
       </li>
     </ul>
   </li>
+  <li>
+    Don't forget to read the documentation about the wxLua 
+    <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxlua_applications">executables</a> 
+    and how to run the <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxlua_samples">samples</a>.<br/>
+  </li>
 </ul>
-
-Don't forget to read the documentation about the wxLua 
-<a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxlua_applications">executables</a> 
-and how to run the <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxlua_samples">samples</a>.<br/>
 
 <p><h3>
 <b>You can view a complete list of downloads on Sourceforge 
@@ -149,34 +150,33 @@ and how to run the <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxlua_s
 
 
 <h2>...for Maemo</h2>
-<p>
+<table><tr>
+<td valign="top"></td>
+<td>
 Run wxLua on your Nokia N810 (possibly N770) using the Maemo platform.
 Please visit Charles Shapiro's website, 
 <a href="http://tomshiro.org/lua-maemo/">http://tomshiro.org/lua-maemo/</a>, for more information.
-</p>
+</td>
+</tr></table>
 
 
 <h2 id="sources">Sourcecode</h2>
 <table><tr>
 <td valign="top"></td>
 <td>
-    <p>
     <a href="<?php echo $gzlink; ?>">2.8.12.3 source package</a> (.tar.gz)<br/>
     See <a href="docs/install.html">install.html</a> for info about required libraries and how to compile and install them.
-    </p>
 </td>
 </tr></table>
 
 
 <h2 id="subversion">Browse the Sourceforge Subversion (SVN) Sourcecode Repository On-line</h2>
-<p>November 21, 2011 - wxLua has switched from CVS to Subversion and all further development will take place in SVN.</p>
 <table><tr>
 <td valign="top"></td>
 <td>
-    <p>
-    Browse the wxLua <a href="https://sourceforge.net/p/wxlua/svn/HEAD/tree/trunk/wxLua/">SVN repository</a> on Sourceforge.
+    November 21, 2011 - wxLua has switched from CVS to Subversion and all further development will take place in SVN.<br/>
+    Browse the wxLua <a href="https://sourceforge.net/p/wxlua/svn/HEAD/tree/trunk/wxLua/">SVN repository</a> on Sourceforge.<br/>
     <!-- <li>Browse the wxLua <a href="http://wxlua.cvs.sourceforge.net/wxlua/wxLua/">CVS repository</a> on Sourceforge</li> -->
-    </p>
 </td>
 </tr></table>
 
