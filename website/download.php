@@ -104,15 +104,15 @@ debug, and execute applications written entirely in Lua.
 </ul>
 
 <p><h3>
-<b>You can view a complete list of downloads on Sourceforge 
-<a href="https://sourceforge.net/projects/wxlua/files/">here<alt="Downloads"/></a>.</b>
+You can view a complete list of downloads on Sourceforge 
+<a href="https://sourceforge.net/projects/wxlua/files/">here<alt="Downloads"/></a>.
 </h3></p>
 
 <h2 id="win">...for Windows</h2>
 <table><tr>
 <td valign="top"><img src="images/win.png" alt="Windows download"/></td>
 <td>
-    <p>Choose either the Ansi or Unicode version and download desired wxLua-X.Y.Z.R-[Ansi/Unicode].zip</br>
+    Choose either the Ansi or Unicode version and download desired wxLua-X.Y.Z.R-[Ansi/Unicode].zip</br>
     The <a href="<?php echo $releaselink; ?>">binary packages</a> are self-contained; you won't need anything else.
     Simply unzip the binaries into a new directory and run the programs in the bin/ directory.<br/>
     See the <a href="support.php">support page</a> if you have problems with installation.
@@ -124,8 +124,8 @@ debug, and execute applications written entirely in Lua.
 <table><tr>
 <td valign="top"><img src="images/linux.png" alt="Linux download"/></td>
 <td>
-    <p>There are currently no binary packages for 2.8.12, please read the install 
-    instructions to learn how to compile it from source code on your system.</p>
+    There are currently no binary packages for 2.8.12, please read the install 
+    instructions to learn how to compile it from source code on your system.
 
     <!--
     <p><a href="<?php echo $linuxlink; ?>">Older 2.8.10 Binary package</a> (autopackage for 
@@ -140,11 +140,9 @@ debug, and execute applications written entirely in Lua.
 <table><tr>
 <td valign="top"><img src="images/macosx.png" alt="Macintosh download"/></td>
 <td>
-    <p>There are currently no binary packages for 2.8.12, please read the install
-    instructions to learn how to compile it from source code on your system.
-    <br/>
+    There are currently no binary packages for 2.8.12, please read the install
+    instructions to learn how to compile it from source code on your system.<br/>
     <a href="<?php echo $maclink; ?>">Older 2.8.10 binary package</a> as a self-contained Mac bundle.
-    </p>
 </td>
 </tr></table>
 
@@ -153,9 +151,9 @@ debug, and execute applications written entirely in Lua.
 <table><tr>
 <td valign="top"></td>
 <td>
-Run wxLua on your Nokia N810 (possibly N770) using the Maemo platform.
-Please visit Charles Shapiro's website, 
-<a href="http://tomshiro.org/lua-maemo/">http://tomshiro.org/lua-maemo/</a>, for more information.
+    Run wxLua on your Nokia N810 (possibly N770) using the Maemo platform.
+    Please visit Charles Shapiro's website, 
+    <a href="http://tomshiro.org/lua-maemo/">http://tomshiro.org/lua-maemo/</a>, for more information.
 </td>
 </tr></table>
 
@@ -182,8 +180,13 @@ Please visit Charles Shapiro's website,
 
 
 <h2 id="older">Older Releases</h2>
-<p>A complete list of the wxLua downloads on Sourceforge are 
-<a href="https://sourceforge.net/projects/wxlua/files/">here<alt="Downloads"/></a>.
+<table><tr>
+<td valign="top"></td>
+<td>
+    A complete list of the wxLua downloads on Sourceforge are 
+    <a href="https://sourceforge.net/projects/wxlua/files/">here<alt="Downloads"/></a>.
+</td>
+</tr></table>
 
 
 <?php include_once("footer.inc.php"); ?>
