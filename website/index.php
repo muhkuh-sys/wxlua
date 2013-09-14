@@ -19,8 +19,8 @@ wxLua is a <a href="http://www.lua.org">Lua</a> scripting language wrapper aroun
 <a href="http://www.wxwidgets.org">wxWidgets</a> 
 <a href="http://en.wikipedia.org/wiki/Cross-platform">cross-platform</a> C++ 
 <a href="http://en.wikipedia.org/wiki/GUI">GUI</a> library. 
-It consists of two IDE type editors that can edit, debug, and run Lua programs (wxLua and wxLuaEdit), 
-an executable for running standalone wxLua scripts (wxLuaFreeze), 
+It consists of two IDE type editors that can edit, debug, and run Lua programs, 
+an executable for running standalone wxLua scripts, 
 a Lua module that may be loaded using require("wx") when using the standard Lua executable, 
 and a library for extending C++ programs with a fast, small, fully embeddable scripting language.
 </p>
@@ -38,7 +38,7 @@ of the C++ wxWidgets cross-platform GUI library.
 This includes the ability to create complex user interface dialogs, 
 file and image manipulation, drawing, network sockets, displaying HTML, 
 and printing to name a few. You can use as much or as little of 
-wxWidgets as you like and C++ developers can trim down the size the 
+wxWidgets as you like and C++ developers can trim down the size of the 
 bindings by turning off preprocessor directives.
 </p>
 <p>
