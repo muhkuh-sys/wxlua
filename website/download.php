@@ -12,11 +12,10 @@
 
   $releaselink="http://sourceforge.net/projects/wxlua/files/wxlua/2.8.12.3";
 
-  $winlink="http://sourceforge.net/projects/wxlua/files/wxlua/2.8.12.2/wxLua-2.8.12.2-MSW-Ansi.zip/download";
-  $dlllink="http://downloads.sourceforge.net/wxlua/wxLua-$latestversion-MSW-dll.zip";
-  $linuxlink="http://downloads.sourceforge.net/wxlua/2.8.10.0/wxlua-2.8.10-1.x86.package";
-  $maclink="http://downloads.sourceforge.net/wxlua/2.8.10.0/wxlua-2.8.10.0-tiger.dmg";
-  $gzlink="http://downloads.sourceforge.net/wxlua/2.8.10.0/wxLua-2.8.10-src.tar.gz";
+  $winlink="http://sourceforge.net/projects/wxlua/files/wxlua/2.8.12.3/wxLua-2.8.12.3-MSW-Ansi.zip/download";
+  $linuxlink="https://sourceforge.net/projects/wxlua/files/wxlua/2.8.10.0/wxlua-2.8.10-1.x86.package";
+  $maclink="https://sourceforge.net/projects/wxlua/files/wxlua/2.8.10.0/wxlua-2.8.10.0-tiger.dmg";
+  $gzlink="https://sourceforge.net/projects/wxlua/files/wxlua/2.8.12.3/wxLua-2.8.12.3-src.tar.gz";
 ?>
 
 <div class="rightSideBar">
@@ -24,7 +23,7 @@
     <div class="sideBarText">
         <p>Latest wxLua version is:<br/><br/>
             <strong>&raquo;&nbsp;<?php echo $latestversion; ?>&nbsp;&laquo;</strong><br/><br/>
-           The change log for this and previous releases can be <a href="docs/changelog.txt">found here</a>
+            The change log for this and previous releases can be <a href="docs/changelog.txt">found here</a>.
         </p>
     </div>
 
@@ -62,15 +61,18 @@
 </div>
 
 <h1 class="first">Download wxLua...</h1>
-<p>wxLua can be used as a <strong>C++ library</strong> for projects
-that want to add scripting capabilities using a Lua interpreter to their wxWidgets programs or as an 
-<strong>application</strong> or <strong>Lua module</strong> for programmers
-who want to write, debug, and execute applications written entirely in Lua.<p/>
+<p>
+wxLua can be used as a C++ library for projects that want to add 
+Lua scripting capabilities to their wxWidgets programs 
+or as an application or Lua module for programmers who want to write, 
+debug, and execute applications written entirely in Lua.
+<p/>
 
 <ul>
   <li>
-    If you are interested in using wxLua as a C++ library to extend your program, you should download the 
-    <strong>sourcecode</strong> and compile the wxLua libraries to link to.
+    If you are interested in using wxLua as a C++ library to extend your program, 
+    you should download the <strong>sourcecode</strong> and compile the 
+    wxLua libraries to link to.
     <ul>
       <li>
         Please read the install.html documentation that is provided in the docs/ folder to learn how to build wxLua.
@@ -78,10 +80,11 @@ who want to write, debug, and execute applications written entirely in Lua.<p/>
     </ul>
   </li>
   <li>
-    Instead, if you are interested in using wxLua to write and execute Lua programs, then download the appropriate <strong>binary</strong> package, if available.
+    Instead, if you are interested in using wxLua to write and execute Lua programs 
+    download the appropriate <strong>binary</strong> package, if available.
     <ul>
       <li>The builds may come in two flavors, Ansi and Unicode.</li>
-      <li>Lua can only be built for Ansi strings and all of its string functions treat them as such.</li>
+      <li>Lua can only be built using Ansi strings and all of its string functions treat them as such.</li>
       <li>wxWidgets can be built using Ansi or Unicode strings.</li>
       <li>wxLua Ansi Build - Strings in Lua are pushed into wxWidgets as-is to be shown in a dialog or used otherwise.</li>
       <li>wxLua Unicode Build - Strings in Lua are Ansi of course, but when they are pushed into wxWidgets 
@@ -99,17 +102,19 @@ Don't forget to read the documentation about the wxLua
 <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxlua_applications">executables</a> 
 and how to run the <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxlua_samples">samples</a>.<br/>
 
-<p><b>You can view a complete list of the downloads on Sourceforge 
-<a href="http://sourceforge.net/project/showfiles.php?group_id=140042">here<alt="Downloads"/></a>.</b></p>
+<p><h3>
+<b>You can view a complete list of downloads on Sourceforge 
+<a href="https://sourceforge.net/projects/wxlua/files/">here<alt="Downloads"/></a>.</b>
+</h3></p>
 
 <h2 id="win">...for Windows</h2>
 <table><tr>
 <td valign="top"><img src="images/win.png" alt="Windows download"/></td>
 <td>
     <p>Choose either the Ansi or Unicode version and download desired wxLua-X.Y.Z.R-[Ansi/Unicode].zip</br>
-    The <a href="<?php echo $releaselink; ?>">Binary packages</a> are self-contained; you won't need anything else.
+    The <a href="<?php echo $releaselink; ?>">binary packages</a> are self-contained; you won't need anything else.
     Simply unzip the binaries into a new directory and run the programs in the bin/ directory.<br/>
-    For problems with installation, see the <a href="support.php">support page</a>.
+    See the <a href="support.php">support page</a> if you have problems with installation.
 </td>
 </tr></table>
 
@@ -135,33 +140,45 @@ and how to run the <a href="http://wxlua.sourceforge.net/docs/wxlua.html#wxlua_s
 <td valign="top"><img src="images/macosx.png" alt="Macintosh download"/></td>
 <td>
     <p>There are currently no binary packages for 2.8.12, please read the install
-    instructions to learn how to compile it from source code on your system.</p>
-
-    <p><a href="<?php echo $maclink; ?>">Older 2.8.10 binary package</a> (Mac Bundle) self-contained.<br/>
+    instructions to learn how to compile it from source code on your system.
+    <br/>
+    <a href="<?php echo $maclink; ?>">Older 2.8.10 binary package</a> as a self-contained Mac bundle.
+    </p>
 </td>
 </tr></table>
 
 
 <h2>...for Maemo</h2>
-<p>Run wxLua on your Nokia N810 (possibly N770) using the Maemo platform.
+<p>
+Run wxLua on your Nokia N810 (possibly N770) using the Maemo platform.
 Please visit Charles Shapiro's website, 
-<a href="http://tomshiro.org/lua-maemo/">http://tomshiro.org/lua-maemo/</a>, for more information.</p>
+<a href="http://tomshiro.org/lua-maemo/">http://tomshiro.org/lua-maemo/</a>, for more information.
+</p>
 
 
 <h2 id="sources">Sourcecode</h2>
-<p>See the Subversion section below to learn how to browse the sources on-line.</p>
-<ul>
-    <li><a href="<?php echo $gzlink; ?>">Older 2.8.10 source package</a> (.tar.gz) </li>
-</ul>
-<p>See <a href="docs/install.html">install.html</a> for info about required libraries and how to compile and install them.</p>
+<table><tr>
+<td valign="top"></td>
+<td>
+    <p>
+    <a href="<?php echo $gzlink; ?>">2.8.12.3 source package</a> (.tar.gz)<br/>
+    See <a href="docs/install.html">install.html</a> for info about required libraries and how to compile and install them.
+    </p>
+</td>
+</tr></table>
 
 
 <h2 id="subversion">Browse the Sourceforge Subversion (SVN) Sourcecode Repository On-line</h2>
 <p>November 21, 2011 - wxLua has switched from CVS to Subversion and all further development will take place in SVN.</p>
-<ul>
-    <li>Browse the wxLua <a href="https://sourceforge.net/p/wxlua/svn/HEAD/tree/trunk/wxLua/">SVN repository</a> on Sourceforge</li>
+<table><tr>
+<td valign="top"></td>
+<td>
+    <p>
+    Browse the wxLua <a href="https://sourceforge.net/p/wxlua/svn/HEAD/tree/trunk/wxLua/">SVN repository</a> on Sourceforge.
     <!-- <li>Browse the wxLua <a href="http://wxlua.cvs.sourceforge.net/wxlua/wxLua/">CVS repository</a> on Sourceforge</li> -->
-</ul>
+    </p>
+</td>
+</tr></table>
 
 
 <h2 id="older">Older Releases</h2>

@@ -7,25 +7,27 @@
 ?>
 
 <h1 id="ml" class="first">Mailing list</h1>
-<p>The <strong>wxlua-users mailing list</strong>
-is where wxLua developers and users work on and discuss wxLua. 
-You can browse the archives, search them, or subscribe to them
+<p>
+The wxlua-users mailing list is where wxLua developers and users discuss wxLua. 
+You can browse and search the archives or subscribe to them
 <a href="https://sourceforge.net/p/wxlua/mailman/">here</a>.
-The wxLua mailing list requires a subscription to limit the junk mail sent to it, 
-once subscribed, your e-mail will not be shared or sold to others.
+</p>
+<p>
+The wxLua mailing list requires a subscription to limit junk mail sent to it, 
+once subscribed, your e-mail will not be sold or shared to others.
 </p>
 
-<p>You can also browse archives of the mailing list on these sites :
+<p>These sites mirror the wxLua mailing list :
 <ul>
 <li> <a href="http://gmane.org/">GMane</a>
 <ul>
-  <li>Browse postings <a href="http://news.gmane.org/gmane.comp.lib.wxwidgets.wxlua.user">here</a>.</li>
-  <li>More info about <strong>GMane</strong> services for the wxLua mailing list can be found 
+  <li>View wxLua postings <a href="http://news.gmane.org/gmane.comp.lib.wxwidgets.wxlua.user">here</a>.</li>
+  <li>More info about GMane services for the wxLua mailing list can be found 
       <a href="http://dir.gmane.org/gmane.comp.lib.wxwidgets.wxlua.user">here</a>.</li>
 </ul>
 <li> <a href="http://www.mail-archive.com/">Mail Archive</a>
 <ul>
-  <li>Browse postings <a href="http://www.mail-archive.com/wxlua-users@lists.sourceforge.net/">here</a>.</li>
+  <li>View wxLua postings <a href="http://www.mail-archive.com/wxlua-users@lists.sourceforge.net/">here</a>.</li>
 </ul>
 </ul>
 </p>
