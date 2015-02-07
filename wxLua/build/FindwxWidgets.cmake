@@ -203,13 +203,19 @@ endif()
 
 #=====================================================================
 #=====================================================================
-if(WIN32 AND NOT CYGWIN AND NOT MSYS)
+# Is the host a unix like system? This includes also CYGWIN.
+if(CMAKE_HOST_UNIX OR MSYS)
+  set(wxWidgets_FIND_STYLE "unix")
+
+# Is the host a windows32 or windows64 system?
+elseif(CMAKE_HOST_WIN32 AND NOT CYGWIN)
   set(wxWidgets_FIND_STYLE "win32")
-else()
-  if(UNIX OR MSYS)
-    set(wxWidgets_FIND_STYLE "unix")
-  endif()
-endif()
+
+# This is an unknown host.
+else(CMAKE_HOST_UNIX OR MSYS)
+  message(FATAL_ERROR "Unknown host!")
+
+endif(CMAKE_HOST_UNIX OR MSYS)
 
 #=====================================================================
 # WIN32_FIND_STYLE
