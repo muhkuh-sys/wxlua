@@ -1,0 +1,3 @@
+[submodule "wxLua/modules/wxstedit"]
+	path = wxLua/modules/wxstedit
+	url = https://github.com/muhkuh-sys/wxstedit.git
