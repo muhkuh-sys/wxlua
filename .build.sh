@@ -127,7 +127,7 @@ if [ $STATUS -ne 0 ]; then
 	exit 1
 fi
 
-make install DESTDIR=/tmp
+make install DESTDIR=/tmp/wxlua_win32
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
 	exit 1
@@ -161,7 +161,7 @@ if [ $STATUS -ne 0 ]; then
 	exit 1
 fi
 
-make install DESTDIR=/tmp
+make install DESTDIR=/tmp/wxlua_win64
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
 	exit 1
