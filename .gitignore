@@ -1,0 +1,11 @@
+# Ignore all files in the targets folder.
+/wxWidgets-3.0.2/
+/wxLua/build_win32/
+/wxLua/build_win64/
+/build/
+
+# Ignore all compiled python modules.
+*.pyc
+
+# Ignore all backup files.
+*~
