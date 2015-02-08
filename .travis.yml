@@ -22,7 +22,7 @@ before_install:
   - source ~/virtualenv/python2.7/bin/activate
   - pip install -q requests
   - wget https://bintray.com/artifact/download/muhkuh/Muhkuh/org/muhkuh/tools/lua/5.1.4/lua-5.1.4.zip -O /tmp/lua-5.1.4.zip
-  - mkdir /tmp/lua-5.1.4 && cd /tmp/lua-5.1.4 && unzip /tmp/lua-5.1.4.zip
+  - mkdir /tmp/lua-5.1.4 && pushd /tmp/lua-5.1.4 && unzip /tmp/lua-5.1.4.zip && popd
 
 
 # This is the command to build the whole project and pack the results in a distributable form.
