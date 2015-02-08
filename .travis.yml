@@ -1,0 +1,33 @@
+language: c
+
+env:
+  global:
+    - secure: "IEInFytCOaq3sHv2T/lpejVqyNG9tKPWzfvJ1mZYqVjRAzMI7T0XDRnqjBKZwrwUgqf/lRj8UUrVAlU7lSwYfkA90jZq4YqV2fWlZMDC9IFyvM3rJq2Y9oWv6SGnYWoSAbZzbGk4qg+YG8iuEnpJBPRdp3LcRgQQ+8caY6TEvQs="
+    - LUA_WIN32_INCLUDE_DIR=/tmp/lua-5.1.4/windows_x86/dev/include
+    - LUA_WIN32_LIBRARY=/tmp/lua-5.1.4/windows_x86/dev/lib/liblua.dll.a
+    - LUA_WIN64_INCLUDE_DIR=/tmp/lua-5.1.4/windows_amd64/dev/include
+    - LUA_WIN64_LIBRARY=/tmp/lua-5.1.4/windows_amd64/dev/lib/liblua.dll.a
+
+
+before_install:
+  - sudo dpkg --purge cmake cmake-doc cmake-data
+  - curl http://download.opensuse.org/repositories/home:/doc_bacardi/xUbuntu_12.04/Release.key | sudo apt-key add -
+  - echo "deb http://download.opensuse.org/repositories/home:/doc_bacardi/xUbuntu_12.04 ./" | sudo tee -a /etc/apt/sources.list
+  - sudo apt-get update -qq
+  - sudo apt-get --assume-yes install mingw-w64 g++-mingw-w64 g++-mingw-w64-i686 g++-mingw-w64-x86-64 gcc-mingw-w64 gcc-mingw-w64-i686 gcc-mingw-w64-x86-64 gcc-mingw-w64-i686 gcc-mingw-w64-x86-64 gcc-mingw-w64-i686 gcc-mingw-w64-x86-64 binutils-mingw-w64-i686 binutils-mingw-w64-x86-64
+  - sudo apt-get --assume-yes install gcc-multilib g++-multilib make libudev-dev libreadline6-dev
+  - sudo apt-get --assume-yes install cmake3
+  - sudo apt-get --assume-yes install python-pip python-virtualenv
+  - virtualenv ~/virtualenv/python2.7
+  - source ~/virtualenv/python2.7/bin/activate
+  - pip install -q requests
+  - wget https://bintray.com/artifact/download/muhkuh/Muhkuh/org/muhkuh/tools/lua/5.1.4/lua-5.1.4.zip -O /tmp/lua-5.1.4.zip
+  - mkdir /tmp/lua-5.1.4 && cd /tmp/lua-5.1.4 && unzip /tmp/lua-5.1.4.zip
+
+
+# This is the command to build the whole project and pack the results in a distributable form.
+script:
+  - ./.build.sh
+
+#  - python installer/ivy/deploy.py build/artifacts/artifacts_lua.xml
+
