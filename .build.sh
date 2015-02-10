@@ -54,6 +54,7 @@ cp libwx_mswu_stc-3.0-i686-w64-mingw32.a      libwx_mswu_stc-3.0.a
 cp libwx_mswu_webview-3.0-i686-w64-mingw32.a  libwx_mswu_webview-3.0.a
 cp libwx_mswu_xrc-3.0-i686-w64-mingw32.a      libwx_mswu_xrc-3.0.a
 cp libwxscintilla-3.0-i686-w64-mingw32.a      libwx_mswu_scintilla-3.0.a
+cp libwxscintilla-3.0-i686-w64-mingw32.a      libwx_mswu_scintilla-3.0-i686-w64-mingw32.a
 popd
 
 cd ..
@@ -101,6 +102,7 @@ cp libwx_mswu_stc-3.0-x86_64-w64-mingw32.a      libwx_mswu_stc-3.0.a
 cp libwx_mswu_webview-3.0-x86_64-w64-mingw32.a  libwx_mswu_webview-3.0.a
 cp libwx_mswu_xrc-3.0-x86_64-w64-mingw32.a      libwx_mswu_xrc-3.0.a
 cp libwxscintilla-3.0-x86_64-w64-mingw32.a      libwx_mswu_scintilla-3.0.a
+cp libwxscintilla-3.0-x86_64-w64-mingw32.a      libwx_mswu_scintilla-3.0-x86_64-w64-mingw32.a
 popd
 
 cd ../..
