@@ -21,6 +21,7 @@ cd build_win32
 ../configure --host=i686-w64-mingw32 --prefix=/tmp/wxwidgets-3.0.2_win32/ --enable-vendor=muhkuh --disable-shared
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
+	cat config.log
 	exit 1
 fi
 
@@ -69,6 +70,7 @@ cd build_win64
 ../configure --host=x86_64-w64-mingw32 --prefix=/tmp/wxwidgets-3.0.2_win64/ --enable-vendor=muhkuh --disable-shared
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
+	cat config.log
 	exit 1
 fi
 
