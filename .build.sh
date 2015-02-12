@@ -22,6 +22,8 @@ cd build_win32
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
 	cat config.log
+	ls -l /usr/bin/i686-w64-mingw32-gcc
+	/usr/bin/i686-w64-mingw32-gcc --version
 	exit 1
 fi
 
