@@ -21,10 +21,6 @@ cd build_win32
 ../configure --host=i686-w64-mingw32 --prefix=/tmp/wxwidgets-3.0.2_win32/ --enable-vendor=muhkuh --disable-shared
 STATUS=$?
 if [ $STATUS -ne 0 ]; then
-	env
-	cat config.log
-	ls -l /usr/bin/i686-w64-mingw32-gcc
-	/usr/bin/i686-w64-mingw32-gcc --version
 	exit 1
 fi
 
