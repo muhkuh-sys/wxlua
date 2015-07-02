@@ -1068,7 +1068,7 @@ void* LUACALL wxluaT_getuserdatatype(lua_State* L, int stack_idx, int wxl_type)
         // pointer to the class object on the stack. We need to shift the
         // pointer by the number of bytes in wxLuaBindClass::baseclass_vtable_offsets
         // so that when it is casted to the base class we don't segfault.
-        long int o = (long int)wxlua_touserdata(L, stack_idx, false);
+        intptr_t o = (intptr_t)wxlua_touserdata(L, stack_idx, false);
 
         if (wxlClass->baseclass_wxluatypes)
         {
