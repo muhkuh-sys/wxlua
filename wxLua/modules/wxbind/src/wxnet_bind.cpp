@@ -100,9 +100,9 @@ static int LUACALL wxLua_wxSocketBase_GetClientData(lua_State *L)
     // get this
     wxSocketBase * self = (wxSocketBase *)wxluaT_getuserdatatype(L, 1, wxluatype_wxSocketBase);
     // call GetClientData
-    long  returns = (long )self->GetClientData();
+    void *returns = self->GetClientData();
     // push the result number
-    lua_pushnumber(L, returns);
+    lua_pushnumber(L, (intptr_t)returns);
 
     return 1;
 }
@@ -398,7 +398,7 @@ static wxLuaBindCFunc s_wxluafunc_wxLua_wxSocketBase_SetClientData[1] = {{ wxLua
 static int LUACALL wxLua_wxSocketBase_SetClientData(lua_State *L)
 {
     // voidptr_long number
-    long number = (long)wxlua_getnumbertype(L, 2);
+    intptr_t number = (intptr_t)wxlua_getnumbertype(L, 2);
     // get this
     wxSocketBase * self = (wxSocketBase *)wxluaT_getuserdatatype(L, 1, wxluatype_wxSocketBase);
     // call SetClientData
@@ -920,9 +920,9 @@ static int LUACALL wxLua_wxSocketEvent_GetClientData(lua_State *L)
     // get this
     wxSocketEvent * self = (wxSocketEvent *)wxluaT_getuserdatatype(L, 1, wxluatype_wxSocketEvent);
     // call GetClientData
-    long  returns = (long )self->GetClientData();
+    void *returns = self->GetClientData();
     // push the result number
-    lua_pushnumber(L, returns);
+    lua_pushnumber(L, (intptr_t)returns);
 
     return 1;
 }

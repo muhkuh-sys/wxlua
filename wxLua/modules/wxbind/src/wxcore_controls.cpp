@@ -1285,7 +1285,7 @@ static int LUACALL wxLua_wxItemContainer_Append1(lua_State *L);
 static int LUACALL wxLua_wxItemContainer_Append1(lua_State *L)
 {
     // voidptr_long number
-    long number = (long)wxlua_getnumbertype(L, 3);
+    intptr_t number = (intptr_t)wxlua_getnumbertype(L, 3);
     // const wxString item
     const wxString item = wxlua_getwxStringtype(L, 2);
     // get this
@@ -1373,9 +1373,9 @@ static int LUACALL wxLua_wxItemContainer_GetClientData(lua_State *L)
     // get this
     wxItemContainer * self = (wxItemContainer *)wxluaT_getuserdatatype(L, 1, wxluatype_wxItemContainer);
     // call GetClientData
-    long  returns = (long )self->GetClientData(n);
+    void *returns = self->GetClientData(n);
     // push the result number
-    lua_pushnumber(L, returns);
+    lua_pushnumber(L, (intptr_t)returns);
 
     return 1;
 }
@@ -1459,7 +1459,7 @@ static int LUACALL wxLua_wxItemContainer_Insert1(lua_State *L);
 static int LUACALL wxLua_wxItemContainer_Insert1(lua_State *L)
 {
     // voidptr_long number
-    long number = (long)wxlua_getnumbertype(L, 4);
+    intptr_t number = (intptr_t)wxlua_getnumbertype(L, 4);
     // unsigned int pos
     unsigned int pos = (unsigned int)wxlua_getuintegertype(L, 3);
     // const wxString item
@@ -1501,7 +1501,7 @@ static wxLuaBindCFunc s_wxluafunc_wxLua_wxItemContainer_SetClientData[1] = {{ wx
 static int LUACALL wxLua_wxItemContainer_SetClientData(lua_State *L)
 {
     // voidptr_long number
-    long number = (long)wxlua_getnumbertype(L, 3);
+    intptr_t number = (intptr_t)wxlua_getnumbertype(L, 3);
     // unsigned int n
     unsigned int n = (unsigned int)wxlua_getuintegertype(L, 2);
     // get this
@@ -4359,7 +4359,7 @@ static int LUACALL wxLua_wxListCtrl_SortItems(lua_State *L)
     wxListCtrl *self = (wxListCtrl *)wxluaT_getuserdatatype(L, 1, wxluatype_wxListCtrl);
 
     // call SortItems
-    bool returns = self->SortItems(wxLua_ListCompareFunction, (long)&LCF_data);
+    bool returns = self->SortItems(wxLua_ListCompareFunction, (wxIntPtr)&LCF_data);
 
     luaL_unref(L, LUA_REGISTRYINDEX, LCF_data.lua_tag); // remove ref to function
 
@@ -11553,9 +11553,9 @@ static int LUACALL wxLua_wxTreeItemId_GetValue(lua_State *L)
     // get this
     wxTreeItemId *self = (wxTreeItemId *)wxluaT_getuserdatatype(L, 1, wxluatype_wxTreeItemId);
     // call GetValue
-    long returns = (long)self->m_pItem;
+    void *returns = self->m_pItem;
     // push the result number
-    lua_pushnumber(L, returns);
+    lua_pushnumber(L, (intptr_t)returns);
     // return the number of parameters
     return 1;
 }
