@@ -101,6 +101,8 @@ public:
 // wxLuaStackDialog
 // ----------------------------------------------------------------------------
 
+WX_DECLARE_HASH_MAP(intptr_t, void*, wxIntegerHash, wxIntegerEqual, wxIntptrToVoidpHashMap);
+
 class WXDLLIMPEXP_WXLUADEBUG wxLuaStackDialog : public wxDialog
 {
 public:
@@ -245,7 +247,7 @@ public:
     bool m_show_dup_expand_msg;
     int  m_batch_count;
 
-    wxLongToLongHashMap m_expandedItems; // map[long Lua table ptr] = &wxLuaStackListData
+    wxIntptrToVoidpHashMap m_expandedItems; // map[long Lua table ptr] = &wxLuaStackListData
 
     wxArrayPtrVoid m_listData;    // array of wxLuaStackListData
 

@@ -1090,7 +1090,7 @@ bool wxLuaStackDialog::ExpandItem(long lc_item)
 
             long long_key = 0;
             if (debugItem->GetRefPtr(long_key))
-                m_expandedItems[long_key] = (long)stkListData;
+                m_expandedItems[long_key] = stkListData;
 
             FillTableEntry(lc_item, stkListData->m_childrenDebugData);
 
@@ -1123,7 +1123,7 @@ bool wxLuaStackDialog::ExpandItem(long lc_item)
             {
                 debugItem->SetFlagBit(WXLUA_DEBUGITEM_EXPANDED, true);
 
-                m_expandedItems[long_key] = (long)stkListData;
+                m_expandedItems[long_key] = stkListData;
 
                 EnumerateTable(debugItem->GetRef(), debugItem->GetIndex() + 1, lc_item);
                 expanded = true;
